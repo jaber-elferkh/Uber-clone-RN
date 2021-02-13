@@ -11,7 +11,7 @@ const HomeMap = () => {
         justifyContent: 'center',
       }}>
       <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 25}}>
-        Home Map
+        I'm a Map
       </Text>
     </View>
   );
