@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 20,
     backgroundColor: 'white',
-    borderRadius: 10,
+    // borderRadius: 10,
   },
   image: {
     height: 70,
