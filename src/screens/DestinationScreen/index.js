@@ -10,47 +10,31 @@ const DestinationScreen = () => {
   const [destinationPlace, setDestinationPlace] = useState(null);
 
   useEffect(() => {
-    console.warn('useEffect is called');
+    // console.warn('useEffect is called');
     if (originPlace && destinationPlace) {
       console.warn('Redirects to results');
     }
   }, [originPlace, destinationPlace]);
 
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        <GooglePlacesAutocomplete
-          placeholder="Where from?"
-          onPress={(data, details = null) => {
-            originPlace({data, details});
-            console.log(data, details);
-          }}
-          styles={{
-            textInput: styles.textInput,
-          }}
-          fetchDetails
-          query={{
-            key: 'AIzaSyBdxJrlEbMRF0UZv7PGr_yOUSaP-KteuHQ',
-            language: 'en',
-          }}
-        />
-        <GooglePlacesAutocomplete
-          placeholder="Where to?"
-          onPress={(data, details = null) => {
-            setDestinationPlace({data, details});
-            console.log(data, details);
-          }}
-          styles={{
-            textInput: styles.textInput,
-          }}
-          fetchDetails
-          query={{
-            key: 'AIzaSyBdxJrlEbMRF0UZv7PGr_yOUSaP-KteuHQ',
-            language: 'en',
-          }}
-        />
-      </View>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <GooglePlacesAutocomplete
+        style={{
+          container: {
+            flex: 1,
+          },
+        }}
+        placeholder="Where to?"
+        onPress={(data, details = null) => {
+          console.log(data, details);
+        }}
+        fetchDetails={true}
+        query={{
+          key: 'AIzaSyAZuFzQO8RMcOrbfG2rndjO0yoysArQ_co',
+          language: 'en',
+        }}
+      />
+    </View>
   );
 };
 

@@ -4,9 +4,10 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 20,
+    padding: 10,
     backgroundColor: 'white',
-    // borderRadius: 10,
+    borderRadius: 10,
+    marginBottom: 10,
   },
   image: {
     height: 70,

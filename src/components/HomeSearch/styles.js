@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   inputBox: {
-    backgroundColor: '#d9d9d9',
+    backgroundColor: '#d1d1d1',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
